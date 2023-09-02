@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <main class="container">
+    <article>
+        <div>
+            <h1 class="centered">Add a task...</h1>
+            <form>
+                <label for="task"><h2>Task</h2></label><br>
+                <input type="text" id="task" required name="task"><br> 
+                <input type="submit" onclick="saveTask()" value="Submit">         
+               </form>         
+        </div>
+    </article>
+    
+<article>
+    <div>   
+        <h1>My Tasks</h1>
+    </div>
+</article>
+
+<article>
+    <div>
+        Today
+    </div>
+    </article>
+</article>
+
+</main>
+</body>
+</html>
