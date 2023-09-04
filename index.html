@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
-    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>To-Do List</title>
 </head>
 <body>
     <main class="container">
-    <article>
-        <div>
-            <h1 class="centered">Add a task...</h1>
-            <form>
-                <label for="task"><h2>Task</h2></label><br>
-                <input type="text" id="task" required name="task"><br> 
-                <input type="submit" onclick="saveTask()" value="Submit">         
-               </form>         
-        </div>
-    </article>
+
+        <div class="grid" id="newtask">
+            <h1>Add a new taskg</h1>
+            <input type="text" name="task" placeholder="Add an task to the list..." required />
+            <div>
+              <button id="save">Add item</button> 
+            </div>
+          </div>    
+
+
+
+
+        
+        <article>
+            <h1>Tasks</h1>
+            <div id="tasks">   
+                <!-- Tasks will be displayed here -->
+            </div>
+            <footer>
+            <div id="completedtasks">
+                <h1>Completed</h1>
+            </div>
+
+            </footer>
+        </article>
+    </main>
     
-<article>
-    <div>   
-        <h1>My Tasks</h1>
-    </div>
-</article>
-
-<article>
-    <div>
-        Today
-    </div>
-    </article>
-</article>
-
-</main>
+    <script src="todo.js"></script>
 </body>
 </html>
