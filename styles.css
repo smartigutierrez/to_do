@@ -1,0 +1,7 @@
+.del {
+    text-decoration: line-through;
+    color: green;
+}
+.delete {
+    color: crimson;
+}

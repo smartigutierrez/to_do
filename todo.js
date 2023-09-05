@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
             taskContainer.innerHTML += `
                 <div class="task">
                     <span class="taskname">${taskValue}</span>
-                    <button class="delete"><i class="far fa-trash-alt"></i></button>
+                    <role="button" class="delete">Mark as done</role>
                 </div>
             `;
 
-            taskInput.value = ""; // Clear the input field
+            taskInput.value = ""; 
 
             var currentTasks = document.querySelectorAll(".delete");
             for (var i = 0; i < currentTasks.length; i++) {
@@ -37,4 +37,6 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
         `;
     }
+
+    function darkmode(){}
 });

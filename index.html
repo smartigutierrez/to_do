@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="styles.css">
-    
     <title>To-Do List</title>
 </head>
 <body>
     <main class="container">
+        <nav>
+            <h1>Tasks for today</h1>
+            
+            <ul>
+                <li><a href="#" role="button" class="outline secondary">Toggle dark mode</a></li>
+            </ul>
+        </nav>
 
         <div class="grid" id="newtask">
-            <h1>Add a new taskg</h1>
-            <input type="text" name="task" placeholder="Add an task to the list..." required />
+            <input type="text" name="task" placeholder="Add a task to the list..." required />
             <div>
-              <button id="save">Add item</button> 
+                <button id="save">Add task</button> 
             </div>
-          </div>    
-
-
-
-
-        
+        </div>
         <article>
-            <h1>Tasks</h1>
-            <div id="tasks">   
-                <!-- Tasks will be displayed here -->
+        <div class="grid">
+                <h4>Tasks</h4>
+            <div id="tasks">
+                <!-- Tasks go here -->
             </div>
-            <footer>
-            <div id="completedtasks">
-                <h1>Completed</h1>
+        </article>
+<article>
+        </div>
+        
+        <div class="grid">
+            <div>
+                <h4>Completed</h4>
             </div>
+                <div id="completedtasks">
+                </div>
+        </div>
 
-            </footer>
         </article>
     </main>
-    
+
     <script src="todo.js"></script>
 </body>
 </html>
