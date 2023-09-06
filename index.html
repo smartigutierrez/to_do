@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>To-Do List</title>
 </head>
 <body>
     <main class="container">
+            <div class="timer"></div>
+
         <nav>
             <h1>Tasks for today</h1>
             
@@ -16,7 +19,7 @@
                 <li><a href="#" role="button" class="outline secondary">Toggle dark mode</a></li>
             </ul>
         </nav>
-
+        
         <div class="grid" id="newtask">
             <input type="text" name="task" placeholder="Add a task to the list..." required />
             <div>
@@ -29,10 +32,8 @@
             <div id="tasks">
                 <!-- Tasks go here -->
             </div>
-        </article>
-<article>
         </div>
-        
+        <footer>
         <div class="grid">
             <div>
                 <h4>Completed</h4>
@@ -40,8 +41,9 @@
                 <div id="completedtasks">
                 </div>
         </div>
+    </footer>
+    </article>
 
-        </article>
     </main>
 
     <script src="todo.js"></script>

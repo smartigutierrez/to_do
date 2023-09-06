@@ -1,7 +1,54 @@
+body{
+    text-align: center;
+}
+
 .del {
     text-decoration: line-through;
-    color: green;
-}
-.delete {
     color: crimson;
 }
+
+.delete {
+    color: green;
+        cursor: pointer;
+
+}
+
+.del {
+    text-decoration: line-through;
+    color: crimson;
+}
+
+.delete {
+    color: green;
+}
+
+.timer {
+    border-radius: 30px;
+    background: beige;
+    text-align: center;
+}
+  
+  .timer__part {
+    font-size: 8rem;    
+    font-weight: bold;
+  }
+  
+  .timer__btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align:center;
+}
+
+  .timer__btn--start {
+    background: #00b84c;
+    text-align: center;}
+  
+  .timer__btn--stop {
+    background: #ff0256;
+    text-align: center;
+  }
+  
